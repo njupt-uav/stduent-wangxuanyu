@@ -3,4 +3,4 @@
 
 虽然代码很烂不想放上来，但是既然建了这个仓库，还是需要以身作则
 
-batchTest包内的rukou和rukou2是批量实验启动方式
+batchTest包内的rukou和rukou2是批量实验启动方式，nsga2批量实验已经放到工程中，改一下路径即可
