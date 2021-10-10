@@ -5,6 +5,10 @@
     <file url="file://$PROJECT_DIR$/src/BatchTest/ChangeParameter.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/BatchTest/RuKou.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/BatchTest/RuKou2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/kmeans/Kmean.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/nsga2/Exchange4.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/nsga2/Individual.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/../test commons io/aaa.txt" charset="GBK" />
+    <file url="PROJECT" charset="GBK" />
   </component>
 </project>
