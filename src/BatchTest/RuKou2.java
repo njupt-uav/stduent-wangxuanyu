@@ -1,8 +1,8 @@
 package BatchTest;
 
-import java.io.IOException;
-
 import compare.Parameter;
+
+import java.io.IOException;
 
 //
 //import java.io.IOException;

@@ -2,10 +2,8 @@ package BatchTest;
 
 import java.io.IOException;
 
-import compare.Parameter;
-
 public class RuKou3 {
-	
+
 	public static void main(String[] args) throws IOException, CloneNotSupportedException {
 //		ChangeParameter.fileOutPath="D:\\批量实验结果\\"+"2021.4.26其他主算法.txt";
 //		for(int i=0;i<Parameter.mainMethods.length;i++)
@@ -28,5 +26,5 @@ public class RuKou3 {
 //							ChangeParameter.changeParameter(mainMethod,speed,subIterator,iterator,map,deadline
 //									,selfOwnUAVFactor,priceMagnification);
 //						 }
-}
+	}
 }

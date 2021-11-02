@@ -1,15 +1,8 @@
 package BatchTest;
 
-import java.io.IOException;
-
-import compare.PFRange;
-import compare.PFSet;
 import compare.Parameter;
-import compare.SelectTheFirstRank;
-import greedy.GreedyMain;
-import method.Nsga2Main;
-import sa.SaMain;
-import variableNeighborhood.VNMain;
+
+import java.io.IOException;
 
 public class RuKou {
 public static void main(String[] args) throws IOException, CloneNotSupportedException {

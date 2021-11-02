@@ -1,19 +1,18 @@
 package subiterations;
 
-import java.util.Collections;
-
 import Resource.Map;
 import Resource.UAV;
-import method.Charge;
+
+import java.util.Collections;
+
 public class RandomGeneratedSequence {
-   public static void	randomGeneratedSequence(UAV u,Map map)
-   {  
-	   u.nodeSequence.clear();
-	   u.nodeSequence.addAll(u.nodeSet);
-	  u.nodeSequence.addAll(u.nodeSet);
-	  
-	   //打乱生成序列
-	   Collections.shuffle(u.nodeSequence);
-	  
-   }
+	public static void randomGeneratedSequence(UAV u, Map map) {
+		u.nodeSequence.clear();
+		u.nodeSequence.addAll(u.nodeSet);
+		u.nodeSequence.addAll(u.nodeSet);
+
+		//打乱生成序列
+		Collections.shuffle(u.nodeSequence);
+
+	}
 }
