@@ -27,7 +27,7 @@ public class Read2 {
 
 		strbuff = data.readLine();//第一行
 		strbuff = strbuff.replace(" ", "");
-		map.totalNum = Integer.valueOf(strbuff);//文件第一行是城市数量
+		map.totalNum = Integer.parseInt(strbuff);//文件第一行是城市数量
 		switch (map.totalNum) {
 			case 52:
 				map.csNum = 4;
@@ -55,25 +55,25 @@ public class Read2 {
 		for (int j = 0; j < map.csNum; j++) {
 			strbuff = data.readLine();
 			String[] strcol = strbuff.split(" ");
-			map.whichChargingStationIsCloser[j] = Integer.valueOf(strcol[0]);
+			map.whichChargingStationIsCloser[j] = Integer.parseInt(strcol[0]);
 			//
 			//	float  minTime=(float) (map.distance[map.whichChargingStationIsCloser[j]][j]/UAV.speed*2+map.node[j].missionTime*1.75);
-			Node node = new Node(Double.valueOf(strcol[1]), Double.valueOf(strcol[2]), Float.valueOf(strcol[3]));
+			Node node = new Node(Double.parseDouble(strcol[1]), Double.parseDouble(strcol[2]), Float.parseFloat(strcol[3]));
 			map.node[j] = node;
-			x[j] = Double.valueOf(strcol[1]);
-			y[j] = Double.valueOf(strcol[2]);
+			x[j] = Double.parseDouble(strcol[1]);
+			y[j] = Double.parseDouble(strcol[2]);
 		}
 
 
 		for (int i = map.csNum; i < map.totalNum; i++) {
 			strbuff = data.readLine();
 			String[] strcol = strbuff.split(" ");
-			map.whichChargingStationIsCloser[i] = Integer.valueOf(strcol[0]);
+			map.whichChargingStationIsCloser[i] = Integer.parseInt(strcol[0]);
 			//float  minTime=(float) (map.distance[map.whichChargingStationIsCloser[i]][i]/UAV.speed*2+map.node[i].missionTime*1.75);
-			Node node = new Node(Double.valueOf(strcol[1]), Double.valueOf(strcol[2]), Float.valueOf(strcol[3]));
+			Node node = new Node(Double.parseDouble(strcol[1]), Double.parseDouble(strcol[2]), Float.parseFloat(strcol[3]));
 			map.node[i] = node;
-			x[i] = Double.valueOf(strcol[1]);
-			y[i] = Double.valueOf(strcol[2]);
+			x[i] = Double.parseDouble(strcol[1]);
+			y[i] = Double.parseDouble(strcol[2]);
 		}
 
 		for (int i = 0; i < map.totalNum; i++)//初始化每个城市之间的距离

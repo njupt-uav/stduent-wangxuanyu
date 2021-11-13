@@ -3,12 +3,13 @@ package generateMap;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+import java.nio.charset.StandardCharsets;
 
 public class GenerateMap3 {
 //纵的很长，横的很短
 	  public static void main(String[] args) throws IOException {
 	    	 FileOutputStream fos=new FileOutputStream("D:\\matlab代码\\scdt3.txt");
-	 		OutputStreamWriter osw=new OutputStreamWriter(fos,"UTF-8");
+	 		OutputStreamWriter osw=new OutputStreamWriter(fos, StandardCharsets.UTF_8);
 	 		
 	    	 int xLength=8000;
 	    	 int yLength=6000;

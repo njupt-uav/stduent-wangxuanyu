@@ -2,12 +2,12 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/BatchTest/ChangeParameter.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/BatchTest/RuKou.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/BatchTest/RuKou2.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/kmeans/Kmean.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/nsga2/Exchange4.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/nsga2/Individual.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/BatchTest/ChangeParameter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/BatchTest/RuKou.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/BatchTest/RuKou2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/kmeans/Kmean.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/nsga2/Exchange4.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/nsga2/Individual.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/../test commons io/aaa.txt" charset="GBK" />
     <file url="PROJECT" charset="GBK" />
   </component>

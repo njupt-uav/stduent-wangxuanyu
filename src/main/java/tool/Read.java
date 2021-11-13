@@ -6,6 +6,7 @@ import Resource.UAV;
 import kmeans.Kmean;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 
 
 //此类生成实例时用//运行本程序要结合Kmeans包下的Keman类使用//首先使用kmean类的主函数增加基站，然后使用本类的主函数
@@ -26,10 +27,10 @@ public class Read {
 		//kmeans.FILEPATH是
 		data.readLine();//第一行
 		strbuff = data.readLine();//第二行
-		map.totalNum = Integer.valueOf(strbuff);//文件第二行是城市数量
+		map.totalNum = Integer.parseInt(strbuff);//文件第二行是城市数量
 		data.readLine();//第三行
 		strbuff = data.readLine();//第四行
-		map.csNum = Integer.valueOf(strbuff);//文件第四行是充电节点数量
+		map.csNum = Integer.parseInt(strbuff);//文件第四行是充电节点数量
 		data.readLine();
 		//该节点距离哪个最近
 		map.whichChargingStationIsCloser = new int[map.totalNum];
@@ -39,10 +40,10 @@ public class Read {
 		for (int j = 0; j < map.csNum; j++) {
 			strbuff = data.readLine();
 			String[] strcol = strbuff.split(" ");
-			map.whichChargingStationIsCloser[j] = Integer.valueOf(strcol[0]) - 1;
+			map.whichChargingStationIsCloser[j] = Integer.parseInt(strcol[0]) - 1;
 
-			x[j] = Double.valueOf(strcol[2]);// x坐标
-			y[j] = Double.valueOf(strcol[4]);// y坐标
+			x[j] = Double.parseDouble(strcol[2]);// x坐标
+			y[j] = Double.parseDouble(strcol[4]);// y坐标
 		}
 
 		data.readLine();
@@ -52,9 +53,9 @@ public class Read {
 
 			strbuff = data.readLine();
 			String[] strcol = strbuff.split(" ");// 字符分割
-			x[i] = Double.valueOf(strcol[2]);// x坐标
-			y[i] = Double.valueOf(strcol[4]);// y坐标
-			map.whichChargingStationIsCloser[i] = Integer.valueOf(strcol[0]) - 1;
+			x[i] = Double.parseDouble(strcol[2]);// x坐标
+			y[i] = Double.parseDouble(strcol[4]);// y坐标
+			map.whichChargingStationIsCloser[i] = Integer.parseInt(strcol[0]) - 1;
 			//System.out.println(map.whichChargingStationIsCloser[i]);
 		}
 
@@ -69,7 +70,7 @@ public class Read {
 
 		//对节点的坐标赋值
 		FileOutputStream fos = new FileOutputStream(FILEOUTPATH);
-		OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
+		OutputStreamWriter osw = new OutputStreamWriter(fos, StandardCharsets.UTF_8);
 //		OutputStreamWriter osw=new OutputStreamWriter(fos,"");
 		osw.write(map.whichChargingStationIsCloser.length + " " + "\n");
 		for (int i = 0; i < map.totalNum; i++) {
@@ -105,8 +106,8 @@ public class Read {
 	public static void main(String[] args) throws IOException {
 		Map map = new Map();
 		float[] NodeAlpha = {5, 10, 15};
-		for (int i = 0; i < NodeAlpha.length; i++) {
-			Node.alpha = NodeAlpha[i];
+		for (float v : NodeAlpha) {
+			Node.alpha = v;
 			read(map);
 		}
 	}

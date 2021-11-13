@@ -3,12 +3,13 @@ package generateMap;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+import java.nio.charset.StandardCharsets;
 
 public class GenerateMap2 {
 	//Ëæ»ú·Ö²¼
 	 public static void main(String[] args) throws IOException {
     	 FileOutputStream fos=new FileOutputStream("scdt2.txt");
- 		OutputStreamWriter osw=new OutputStreamWriter(fos,"UTF-8");
+ 		OutputStreamWriter osw=new OutputStreamWriter(fos, StandardCharsets.UTF_8);
  		
     	 int xLength=8000;
     	 int yLength=6000;
